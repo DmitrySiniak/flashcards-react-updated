@@ -1,16 +1,29 @@
-# React + Vite
+# Flashcards (Functional Components)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Приложение для создания и изучения карточек (Flashcards).
 
-Currently, two official plugins are available:
+Данный проект является переработанной версией приложения Flashcards, первоначально реализованного на классовых компонентах React. В этой версии приложение полностью переписано на функциональные компоненты с использованием React Hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Проект позволяет создавать собственные карточки с вопросами и ответами, отмечать изученные материалы и использовать встроенный режим обучения. Все данные сохраняются в браузере и остаются доступными после перезагрузки страницы.
 
-## React Compiler
+## Возможности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Создание карточек
+* Редактирование карточек
+* Удаление карточек
+* Отметка карточек как выученных
+* Просмотр всех карточек в таблице
+* Режим изучения карточек
+* Переворот карточки
+* Переход между карточками
+* Фильтрация только невыученных карточек
+* Перемешивание карточек
+* Автоматическое сохранение данных
 
-## Expanding the Oxlint configuration
+## Как работает
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Пользователь создаёт карточки, указывая лицевую и оборотную стороны. Все карточки отображаются в общем списке, где их можно редактировать, удалять и отмечать как изученные.
+
+В режиме изучения пользователь просматривает карточки по одной, переворачивает их для просмотра ответа и переключается между ними. Для удобства можно изучать только невыученные карточки или перемешать колоду случайным образом.
+
+Проект был создан как практика перехода от классовых компонентов React к современному подходу на основе функциональных компонентов и хуков.
